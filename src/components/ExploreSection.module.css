@@ -1,0 +1,131 @@
+.section {
+  width: 100%;
+  padding-top: var(--space-30);
+}
+
+.inner {
+  width: min(var(--section-max-width), calc(100% - (var(--page-gutter) * 2)));
+  margin: 0 auto;
+}
+
+.headingRow {
+  display: flex;
+  align-items: center;
+  gap: var(--space-18);
+}
+
+.rule {
+  flex: 1 1 auto;
+  height: 1px;
+  background: var(--color-black);
+}
+
+.title {
+  flex: none;
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: var(--fs-40);
+  line-height: var(--lh-40);
+  font-weight: 400;
+  color: var(--color-black);
+  text-align: center;
+}
+
+.searchRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-24);
+  margin-top: 42px;
+}
+
+.searchField {
+  display: flex;
+  align-items: center;
+  gap: var(--space-10);
+  width: 314px;
+  height: 39px;
+  padding: 0 14px;
+  border: 1px solid var(--color-border-soft);
+  border-radius: var(--radius-8);
+  background: var(--color-soft-surface);
+  box-shadow: var(--shadow-search-inner);
+}
+
+.searchIcon {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  filter: brightness(0);
+}
+
+.searchInput {
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: transparent;
+  color: var(--color-black);
+  font-size: var(--fs-19);
+  line-height: var(--lh-20);
+  font-weight: 400;
+}
+
+.searchInput::placeholder {
+  color: var(--color-black);
+  opacity: 0.7;
+}
+
+.or {
+  font-family: var(--font-script);
+  font-size: var(--fs-40);
+  line-height: var(--lh-40);
+  color: var(--color-black);
+  white-space: nowrap;
+}
+
+.viewAllButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-7);
+  padding: 15px 17px;
+  border-radius: var(--radius-8);
+  background: var(--color-coral-soft);
+  color: var(--color-black);
+  font-size: var(--fs-16);
+  line-height: var(--lh-16);
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.adBox {
+  width: 109px;
+  height: 61px;
+  background: var(--color-divider);
+}
+
+@media (max-width: 1100px) {
+  .searchRow {
+    flex-wrap: wrap;
+  }
+
+  .title {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 720px) {
+  .headingRow {
+    gap: var(--space-10);
+  }
+
+  .title {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+
+  .searchField,
+  .adBox {
+    width: 100%;
+  }
+}

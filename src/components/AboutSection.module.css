@@ -1,0 +1,79 @@
+.section {
+  width: 100%;
+  padding: 34px 0 0;
+  background: var(--color-yellow);
+}
+
+.inner {
+  width: min(var(--section-max-width), calc(100% - (var(--page-gutter) * 2)));
+  margin: 0 auto;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: repeat(3, var(--about-column-width));
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.textCard {
+  min-height: var(--about-image-height);
+  padding: 24px 24px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: rgba(255, 252, 155, 0.9);
+}
+
+.title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: var(--fs-32);
+  line-height: var(--lh-32);
+  font-weight: 400;
+  color: var(--color-black);
+}
+
+.script {
+  margin: 4px 0 14px;
+  font-family: var(--font-script);
+  font-size: var(--fs-40);
+  line-height: var(--lh-40);
+  color: var(--color-black);
+}
+
+.body {
+  margin: 0 0 18px;
+  font-size: var(--fs-19);
+  line-height: var(--lh-body);
+  color: var(--color-black);
+}
+
+.button {
+  align-self: flex-start;
+  padding: 10px 18px;
+  border-radius: var(--radius-8);
+  background: var(--color-gold);
+  color: var(--color-black);
+  font-size: var(--fs-20);
+  line-height: var(--lh-20);
+}
+
+.image {
+  width: var(--about-column-width);
+  height: var(--about-image-height);
+  object-fit: cover;
+}
+
+@media (max-width: 1320px) {
+  .layout {
+    grid-template-columns: 1fr;
+    gap: var(--space-20);
+  }
+
+  .image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 427 / 436;
+  }
+}

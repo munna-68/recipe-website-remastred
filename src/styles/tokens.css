@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Licorice&family=Sora:wght@200;300;400;600&family=Vidaloka&display=swap");
+
+:root {
+  --font-body: "Sora", sans-serif;
+  --font-display: "Vidaloka", serif;
+  --font-script: "Licorice", cursive;
+
+  --color-page-bg: #fdfdfd;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-ink: #130101;
+  --color-soft-surface: #fef4f7;
+  --color-coral: #f28585;
+  --color-coral-soft: rgba(242, 133, 133, 0.34);
+  --color-coral-strong: #f28585;
+  --color-gold: #f8b566;
+  --color-gold-badge: #e0a259;
+  --color-divider: #d9d9d9;
+  --color-list-bg: #ededed;
+  --color-text-mid: #474747;
+  --color-text-dark: #424242;
+  --color-text-muted: #676767;
+  --color-text-footer: #4a4646;
+  --color-text-fast: #444444;
+  --color-green: #b7e5b4;
+  --color-yellow: #fffc9b;
+  --color-border-soft: rgba(124, 124, 124, 0.6);
+  --color-logo-inner: #fff9fb;
+  --color-footer-logo-dark: #3c3c3c;
+
+  --fs-13: 13px;
+  --fs-14: 14px;
+  --fs-16: 16px;
+  --fs-19: 19px;
+  --fs-20: 20px;
+  --fs-2045: 20.45px;
+  --fs-24: 24px;
+  --fs-32: 32px;
+  --fs-36: 36px;
+  --fs-40: 40px;
+
+  --lh-13: 165%;
+  --lh-14: 165%;
+  --lh-16: 140%;
+  --lh-19: 165%;
+  --lh-20: 140%;
+  --lh-24: 39px;
+  --lh-32: 39px;
+  --lh-36: 39px;
+  --lh-40: 39px;
+  --lh-tight: 18.5px;
+  --lh-body: 1.65;
+
+  --space-5: 5px;
+  --space-7: 7px;
+  --space-8: 8px;
+  --space-10: 10px;
+  --space-12: 12px;
+  --space-14: 14px;
+  --space-15: 15px;
+  --space-16: 16px;
+  --space-17: 17px;
+  --space-18: 18px;
+  --space-20: 20px;
+  --space-22: 22px;
+  --space-24: 24px;
+  --space-26: 26px;
+  --space-30: 30px;
+  --space-32: 32px;
+  --space-34: 34px;
+  --space-36: 36px;
+  --space-38: 38px;
+  --space-40: 40px;
+  --space-48: 48px;
+  --space-54: 54px;
+  --space-55: 55px;
+
+  --radius-8: 8px;
+  --radius-pill: 100px;
+
+  --shadow-search-inner: inset 4px 4px 10px rgba(0, 0, 0, 0.25);
+  --shadow-input: 10px 10px 10px rgba(0, 0, 0, 0.25);
+
+  --page-gutter: 36px;
+  --section-max-width: 1368px;
+  --hero-card-width: 315px;
+  --hero-card-height: 418px;
+  --hero-bar-height: 16px;
+  --category-size: 121px;
+  --featured-card-width: 315px;
+  --featured-card-height: 300px;
+  --latest-image-width: 427px;
+  --latest-image-height: 298px;
+  --about-column-width: 427px;
+  --about-image-height: 436px;
+  --cookbook-image-size: 429px;
+  --sidebar-width: 315px;
+  --newsletter-height: 186px;
+  --footer-logo-width: 138px;
+  --footer-logo-height: 133.5px;
+}
